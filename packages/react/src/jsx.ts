@@ -1,17 +1,19 @@
 import { REACT_ELEMENT_TYPE } from 'shared/ReactSymbols';
-import type { Type, Key, Ref, Props, ReactElement, ElementType } from 'shared/ReactTypes';
+import { Key, Ref, Props, ReactElement as ReactElement1, ElementType } from 'shared/ReactTypes';
 // ReactElement
-const ReactElement = function (type: Type, key: Key, ref: Ref, props: Props): ReactElement {
-	const element = {
+const ReactElement = function (type: ElementType, key: Key, ref: Ref, props: Props): ReactElement1 {
+	const element: ReactElement1 = {
 		$$typeof: REACT_ELEMENT_TYPE,
-		type,
+		type: type,
 		key,
 		ref,
 		props,
 		__mark: 'codePoor'
 	};
+
 	return element;
 };
+
 export const jsx = (type: ElementType, config: any, ...maybeChildren: any) => {
 	let key: Key = null;
 	const props: Props = {};

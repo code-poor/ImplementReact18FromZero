@@ -9,5 +9,5 @@ export interface ReactElement {
 	key: Key;
 	props: Props;
 	ref: Ref;
-	__mark: string;
+	__mark: 'codePoor';
 }

@@ -1,8 +1,8 @@
 import { REACT_ELEMENT_TYPE } from 'shared/ReactSymbols';
-import { Key, Ref, Props, ReactElement as ReactElement1, ElementType } from 'shared/ReactTypes';
+import { Key, Ref, Props, ReactElementType, ElementType } from 'shared/ReactTypes';
 // ReactElement
-const ReactElement = function (type: ElementType, key: Key, ref: Ref, props: Props): ReactElement1 {
-	const element: ReactElement1 = {
+const ReactElement = function (type: ElementType, key: Key, ref: Ref, props: Props): ReactElementType {
+	const element: ReactElementType = {
 		$$typeof: REACT_ELEMENT_TYPE,
 		type: type,
 		key,

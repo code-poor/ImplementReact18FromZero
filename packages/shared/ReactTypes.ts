@@ -11,3 +11,4 @@ export interface ReactElementType {
 	ref: Ref;
 	__mark: 'codePoor';
 }
+export type Action<State> = State | ((prevState: State) => State);
